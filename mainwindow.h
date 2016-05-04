@@ -7,7 +7,7 @@
 #include "lanzador.h"
 #include "acercade.h"
 
-class QAction;
+class QActions;
 
 namespace Ui {
 class MainWindow;
@@ -26,19 +26,15 @@ private:
     Monitor     *inter_monitor;
     lanzador    *inter_lanzador;
     acercade    *inter_acercade;
+    QAction     *lanzar;
+    QAction     *monitorear;
+    QAction     *acercadear;
     void createMenus();
     void createActions();
 
-    QAction *lanzar;
-    QAction *monitorear;
-    QAction *acercadear; //yo acercadeo, tu acercadeas, el acercadea, nosotros acercadeamos.
-    //QMenu *lanza;
-    //QMenu *monitor;
-    //QMenu *acerca;
-
 private slots:
-    void f_monitor();
     void f_lanzar();
+    void f_monitor();
     void f_acercade();
 };
 

@@ -2,6 +2,7 @@
 #define MONITOR_H
 
 #include <QWidget>
+#include <QTimer>
 
 namespace Ui {
 class Monitor;
@@ -16,7 +17,12 @@ public:
     ~Monitor();
 
 private:
-    Ui::Monitor *ui;
+    Ui::Monitor     *ui;
+    QTimer          *timer;
+    int             conteo;
+
+private slots:
+    void countTime();
 };
 
 #endif // MONITOR_H

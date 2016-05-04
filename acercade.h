@@ -2,6 +2,7 @@
 #define ACERCADE_H
 
 #include <QWidget>
+#include <QBitmap>
 
 namespace Ui {
 class acercade;

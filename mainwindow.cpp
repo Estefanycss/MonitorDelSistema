@@ -11,8 +11,11 @@ MainWindow::MainWindow(QWidget *parent) :
     createActions();
     createMenus();
     inter_monitor = new Monitor(this->ui->panel_principal);
-    inter_lanzador = NULL;
-    inter_acercade = NULL;
+    inter_monitor->setVisible(true);
+    inter_lanzador = new lanzador(this->ui->panel_principal);
+    inter_lanzador->setVisible(false);
+    inter_acercade = new acercade(this->ui->panel_principal);
+    inter_acercade->setVisible(false);
 
 }
 
@@ -22,13 +25,13 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::createActions(){
-    lanzar = new QAction(tr("do it"),this);
+    lanzar = new QAction(tr("Abrir"),this);
     connect(lanzar,SIGNAL(triggered()),this,SLOT(f_lanzar()));
 
-    monitorear = new QAction(tr("do it"),this);
-    connect(monitorear,SIGNAL(triggered()),this,SLOT(f_monitorear()));
+    monitorear = new QAction(tr("Abrir"),this);
+    connect(monitorear,SIGNAL(triggered()),this,SLOT(f_monitor()));
 
-    acercadear = new QAction(tr("do it"),this);
+    acercadear = new QAction(tr("Abrir"),this);
     connect(acercadear,SIGNAL(triggered()),this,SLOT(f_acercade()));
 }
 
@@ -39,13 +42,19 @@ void MainWindow::createMenus(){
 }
 
 void MainWindow::f_lanzar(){
-    inter_lanzador = new lanzador(this);
+    inter_lanzador->setVisible(true);
+    inter_monitor->setVisible(false);
+    inter_acercade->setVisible(false);
 }
 
 void MainWindow::f_monitor(){
-    inter_monitor = new Monitor(this);
+    inter_monitor->setVisible(true);
+    inter_lanzador->setVisible(false);
+    inter_acercade->setVisible(false);
 }
 
 void MainWindow::f_acercade(){
-    inter_acercade = new acercade(this);
+    inter_acercade->setVisible(true);
+    inter_monitor->setVisible(false);
+    inter_lanzador->setVisible(false);
 }
