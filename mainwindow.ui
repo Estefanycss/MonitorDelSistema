@@ -104,7 +104,18 @@
   <property name="windowTitle">
    <string>Monitor Del Sistema</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="panel_principal" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>821</width>
+      <height>471</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -123,9 +134,9 @@
      <height>29</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuMonitoreo">
+   <widget class="QMenu" name="menuAcerca_De">
     <property name="title">
-     <string>Monitoreo</string>
+     <string>Acerca De</string>
     </property>
    </widget>
    <widget class="QMenu" name="menuLanzador_de_Aplicaciones">
@@ -133,9 +144,9 @@
      <string>Lanzador de Aplicaciones</string>
     </property>
    </widget>
-   <widget class="QMenu" name="menuAcerca_De">
+   <widget class="QMenu" name="menuMonitoreo">
     <property name="title">
-     <string>Acerca De</string>
+     <string>Monitoreo</string>
     </property>
    </widget>
    <addaction name="menuMonitoreo"/>
