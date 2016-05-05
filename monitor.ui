@@ -6,24 +6,48 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>722</width>
-    <height>463</height>
+    <width>966</width>
+    <height>654</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>39</x>
+     <x>20</x>
      <y>9</y>
-     <width>321</width>
-     <height>441</height>
+     <width>841</width>
+     <height>501</height>
     </rect>
    </property>
-   <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="9" column="2">
+     <widget class="QLabel" name="label_14">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Interfaces de Red: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
      <widget class="QLabel" name="h1">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -64,8 +88,43 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_3">
+    <item row="3" column="3">
+     <widget class="QLabel" name="usuario">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="total_RAM">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="kernel">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLabel" name="fecha">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="total_SWAP">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_7">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -84,12 +143,12 @@
        </font>
       </property>
       <property name="text">
-       <string>Total de Memoria RAM: </string>
+       <string>Discos Existentes:</string>
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_4">
+    <item row="4" column="2">
+     <widget class="QLabel" name="label_18">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -108,35 +167,11 @@
        </font>
       </property>
       <property name="text">
-       <string>Total de Memoria RAM libre: </string>
+       <string>Tiempo Transcurrido desde el Encendido: </string>
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_5">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Total de Memoria SWAP: </string>
-      </property>
-     </widget>
-    </item>
-    <item>
+    <item row="4" column="0">
      <widget class="QLabel" name="label_6">
       <property name="minimumSize">
        <size>
@@ -160,7 +195,7 @@
       </property>
      </widget>
     </item>
-    <item>
+    <item row="5" column="0">
      <widget class="QLabel" name="h1_2">
       <property name="minimumSize">
        <size>
@@ -195,8 +230,8 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_7">
+    <item row="3" column="2">
+     <widget class="QLabel" name="label_15">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -215,12 +250,15 @@
        </font>
       </property>
       <property name="text">
-       <string>Discos Existentes:</string>
+       <string>Usuario: </string>
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_9">
+    <item row="9" column="1">
+     <widget class="QPlainTextEdit" name="particiones"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_5">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -239,60 +277,11 @@
        </font>
       </property>
       <property name="text">
-       <string>Espacio de Discos un uso: </string>
+       <string>Total de Memoria SWAP: </string>
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_8">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Particiones Existentes: </string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-   </layout>
-  </widget>
-  <widget class="QWidget" name="verticalLayoutWidget_2">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>10</y>
-     <width>331</width>
-     <height>441</height>
-    </rect>
-   </property>
-   <layout class="QVBoxLayout" name="verticalLayout_2">
-    <item>
+    <item row="0" column="2">
      <widget class="QLabel" name="h1_3">
       <property name="minimumSize">
        <size>
@@ -327,7 +316,62 @@
       </property>
      </widget>
     </item>
-    <item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total de Memoria RAM libre: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLabel" name="procesos">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Particiones Existentes: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
      <widget class="QLabel" name="label_12">
       <property name="minimumSize">
        <size>
@@ -351,7 +395,24 @@
       </property>
      </widget>
     </item>
-    <item>
+    <item row="9" column="3">
+     <widget class="QPlainTextEdit" name="interfaces">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="libre_RAM">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
      <widget class="QLabel" name="label_13">
       <property name="minimumSize">
        <size>
@@ -375,31 +436,7 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_15">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Usuario: </string>
-      </property>
-     </widget>
-    </item>
-    <item>
+    <item row="5" column="2">
      <widget class="QLabel" name="label_16">
       <property name="minimumSize">
        <size>
@@ -423,7 +460,79 @@
       </property>
      </widget>
     </item>
-    <item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Total de Memoria RAM: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLabel" name="tiempo_transcurrido">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="libre_SWAP">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPlainTextEdit" name="discos"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_9">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Espacio de Discos un uso: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLabel" name="espacio_discos">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="2">
      <widget class="QLabel" name="label_17">
       <property name="minimumSize">
        <size>
@@ -447,31 +556,14 @@
       </property>
      </widget>
     </item>
-    <item>
-     <widget class="QLabel" name="label_18">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
+    <item row="6" column="3">
+     <widget class="QLabel" name="hora">
       <property name="text">
-       <string>Tiempo Transcurrido desde el Encendido: </string>
+       <string/>
       </property>
      </widget>
     </item>
-    <item>
+    <item row="7" column="2">
      <widget class="QLabel" name="h1_4">
       <property name="minimumSize">
        <size>
@@ -505,43 +597,6 @@
        <number>0</number>
       </property>
      </widget>
-    </item>
-    <item>
-     <widget class="QLabel" name="label_14">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Interfaces de Red: </string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <spacer name="verticalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
     </item>
    </layout>
   </widget>
