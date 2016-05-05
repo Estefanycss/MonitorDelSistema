@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>782</width>
+    <width>1358</width>
     <height>504</height>
    </rect>
   </property>
@@ -18,7 +18,7 @@
     <rect>
      <x>20</x>
      <y>14</y>
-     <width>747</width>
+     <width>1321</width>
      <height>511</height>
     </rect>
    </property>
@@ -37,6 +37,11 @@
         <height>70</height>
        </size>
       </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Programa realizado por: </string>
       </property>
@@ -47,7 +52,7 @@
     </item>
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="1">
+      <item row="0" column="2">
        <widget class="QLabel" name="label_4">
         <property name="maximumSize">
          <size>
@@ -55,12 +60,17 @@
           <height>20</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Estefany Salas</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="0">
+      <item row="0" column="1">
        <widget class="QLabel" name="label_3">
         <property name="minimumSize">
          <size>
@@ -74,12 +84,17 @@
           <height>20</height>
          </size>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Kevin Hernández</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
+      <item row="1" column="1">
        <widget class="QLabel" name="label_5">
         <property name="maximumSize">
          <size>
@@ -88,11 +103,11 @@
          </size>
         </property>
         <property name="text">
-         <string>holi kevgay</string>
+         <string>ci: 21256507</string>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
+      <item row="1" column="2">
        <widget class="QLabel" name="label_6">
         <property name="maximumSize">
          <size>
@@ -105,7 +120,7 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="2" column="1">
        <widget class="QLabel" name="label_7">
         <property name="maximumSize">
          <size>
@@ -118,7 +133,7 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="1">
+      <item row="2" column="2">
        <widget class="QLabel" name="label_8">
         <property name="maximumSize">
          <size>
@@ -131,6 +146,32 @@
         </property>
        </widget>
       </item>
+      <item row="1" column="0">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="3">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
      </layout>
     </item>
     <item>
@@ -142,7 +183,13 @@
        </size>
       </property>
       <property name="text">
-       <string>Imagen</string>
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="imagenes.qrc">:/images/logo_small</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -151,6 +198,11 @@
     </item>
     <item>
      <widget class="QLabel" name="label_9">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
       <property name="text">
        <string>Programa realizado para la materia de Sistemas Operativos de la carrera Ingeniería en Informática.</string>
       </property>
@@ -162,6 +214,8 @@
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
  <connections/>
 </ui>

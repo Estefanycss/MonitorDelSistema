@@ -25,7 +25,7 @@ lanzador::lanzador(QWidget *parent) :
                             color: white; \
                         }\
                         QTextEdit{ \
-                            background-color: rgb(235,235,235); \
+                            background-color: rgb(236,240,241); \
                             color: rgb(51,51,51) ; \
                         }\
                         ");
