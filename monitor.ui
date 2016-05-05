@@ -19,34 +19,10 @@
      <x>20</x>
      <y>9</y>
      <width>841</width>
-     <height>501</height>
+     <height>522</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="9" column="2">
-     <widget class="QLabel" name="label_14">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Interfaces de Red: </string>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="h1">
       <property name="sizePolicy">
@@ -88,10 +64,13 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="3">
+    <item row="3" column="4">
      <widget class="QLabel" name="usuario">
       <property name="text">
        <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
       </property>
      </widget>
     </item>
@@ -102,17 +81,23 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="3">
+    <item row="1" column="4">
      <widget class="QLabel" name="kernel">
       <property name="text">
        <string/>
       </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
      </widget>
     </item>
-    <item row="5" column="3">
+    <item row="5" column="4">
      <widget class="QLabel" name="fecha">
       <property name="text">
        <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
       </property>
      </widget>
     </item>
@@ -123,7 +108,7 @@
       </property>
      </widget>
     </item>
-    <item row="7" column="0">
+    <item row="8" column="0">
      <widget class="QLabel" name="label_7">
       <property name="minimumSize">
        <size>
@@ -147,7 +132,7 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="2">
+    <item row="4" column="3">
      <widget class="QLabel" name="label_18">
       <property name="minimumSize">
        <size>
@@ -230,7 +215,7 @@
       </property>
      </widget>
     </item>
-    <item row="3" column="2">
+    <item row="3" column="3">
      <widget class="QLabel" name="label_15">
       <property name="minimumSize">
        <size>
@@ -253,6 +238,9 @@
        <string>Usuario: </string>
       </property>
      </widget>
+    </item>
+    <item row="10" column="1">
+     <widget class="QTextEdit" name="particiones"/>
     </item>
     <item row="3" column="0">
      <widget class="QLabel" name="label_5">
@@ -278,7 +266,17 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="2">
+    <item row="2" column="4">
+     <widget class="QLabel" name="procesos">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
      <widget class="QLabel" name="h1_3">
       <property name="minimumSize">
        <size>
@@ -337,14 +335,14 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="3">
-     <widget class="QLabel" name="procesos">
+    <item row="2" column="1">
+     <widget class="QLabel" name="libre_RAM">
       <property name="text">
        <string/>
       </property>
      </widget>
     </item>
-    <item row="9" column="0">
+    <item row="10" column="0">
      <widget class="QLabel" name="label_8">
       <property name="minimumSize">
        <size>
@@ -368,7 +366,7 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="2">
+    <item row="1" column="3">
      <widget class="QLabel" name="label_12">
       <property name="minimumSize">
        <size>
@@ -392,14 +390,7 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QLabel" name="libre_RAM">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="2" column="2">
+    <item row="2" column="3">
      <widget class="QLabel" name="label_13">
       <property name="minimumSize">
        <size>
@@ -423,7 +414,17 @@
       </property>
      </widget>
     </item>
-    <item row="5" column="2">
+    <item row="4" column="4">
+     <widget class="QLabel" name="tiempo_transcurrido">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
      <widget class="QLabel" name="label_16">
       <property name="minimumSize">
        <size>
@@ -444,6 +445,13 @@
       </property>
       <property name="text">
        <string>Fecha: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLabel" name="libre_SWAP">
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>
@@ -471,20 +479,6 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="3">
-     <widget class="QLabel" name="tiempo_transcurrido">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="1">
-     <widget class="QLabel" name="libre_SWAP">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
     <item row="6" column="0">
      <widget class="QLabel" name="label_9">
       <property name="minimumSize">
@@ -509,14 +503,20 @@
       </property>
      </widget>
     </item>
-    <item row="6" column="1">
-     <widget class="QLabel" name="espacio_discos">
-      <property name="text">
-       <string/>
+    <item row="8" column="1">
+     <widget class="QTextEdit" name="discos"/>
+    </item>
+    <item row="8" column="4">
+     <widget class="QTextEdit" name="interfaces">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
       </property>
      </widget>
     </item>
-    <item row="7" column="2">
+    <item row="6" column="3">
      <widget class="QLabel" name="h1_4">
       <property name="minimumSize">
        <size>
@@ -551,19 +551,43 @@
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
-     <widget class="QTextEdit" name="discos"/>
-    </item>
-    <item row="9" column="1">
-     <widget class="QTextEdit" name="particiones"/>
-    </item>
-    <item row="9" column="3">
-     <widget class="QTextEdit" name="interfaces">
+    <item row="8" column="3">
+     <widget class="QLabel" name="label_14">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>16777215</height>
+        <height>30</height>
        </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Interfaces de Red: </string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QTextEdit" name="espacio_discos"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>30</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </item>

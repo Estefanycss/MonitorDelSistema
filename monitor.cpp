@@ -19,20 +19,20 @@ Monitor::~Monitor()
 }
 
 void Monitor::countTime(){
-    QString kernel = QString::fromStdString(exec("../../engine/Project1.exe --kernel-version"));
-    QString processes = QString::fromStdString(exec("../../engine/Project1.exe --running-processes"));
-    QString mem = QString::fromStdString(exec("../../engine/Project1.exe --mem-total"));
-    QString mem_free = QString::fromStdString(exec("../../engine/Project1.exe --mem-total-free"));
-    QString mem_swap = QString::fromStdString(exec("../../engine/Project1.exe --mem-swap"));
-    QString mem_swap_free = QString::fromStdString(exec("../../engine/Project1.exe --mem-swap-free"));
-    QString disk = QString::fromStdString(exec("../../engine/Project1.exe --disk-list"));
-    QString partitions = QString::fromStdString(exec("../../engine/Project1.exe --partitions-list"));
-    QString net = QString::fromStdString(exec("../../engine/Project1.exe --net-list"));
-    QString net_ip = QString::fromStdString(exec("../../engine/Project1.exe --net-list-ip"));
-    QString disk_space = QString::fromStdString(exec("../../engine/Project1.exe --disk-space"));
-    QString user = QString::fromStdString(exec("../../engine/Project1.exe --current-user"));
-    QString date = QString::fromStdString(exec("../../engine/Project1.exe --date-time"));
-    QString uptime = QString::fromStdString(exec("../../engine/Project1.exe --uptime"));
+    QString kernel = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --kernel-version"));
+    QString processes = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --running-processes"));
+    QString mem = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --mem-total"));
+    QString mem_free = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --mem-total-free"));
+    QString mem_swap = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --mem-swap"));
+    QString mem_swap_free = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --mem-swap-free"));
+    QString disk = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --disk-list"));
+    QString partitions = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --partitions-list"));
+    QString net = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --net-list"));
+    QString net_ip = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --net-list-ip"));
+    QString disk_space = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --disk-space"));
+    QString user = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --current-user"));
+    QString date = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --date-time"));
+    QString uptime = QString::fromStdString(exec("../graphic-so-monitor/engine/Project1.exe --uptime"));
     ui->kernel->setText(kernel);
     ui->procesos->setText(processes);
     ui->total_RAM->setText(mem);
