@@ -21,12 +21,12 @@ class Monitor : public QWidget
 public:
     explicit Monitor(QWidget *parent = 0);
     ~Monitor();
-
+    string exec(const char* cmd);
 private:
     Ui::Monitor     *ui;
     QTimer          *timer;
     int             conteo;
-    string exec(const char* cmd);
+
 
 private slots:
 

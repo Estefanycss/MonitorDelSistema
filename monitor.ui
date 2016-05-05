@@ -167,7 +167,7 @@
        </font>
       </property>
       <property name="text">
-       <string>Tiempo Transcurrido desde el Encendido: </string>
+       <string>Tiempo de Encendido: </string>
       </property>
      </widget>
     </item>
@@ -253,9 +253,6 @@
        <string>Usuario: </string>
       </property>
      </widget>
-    </item>
-    <item row="9" column="1">
-     <widget class="QPlainTextEdit" name="particiones"/>
     </item>
     <item row="3" column="0">
      <widget class="QLabel" name="label_5">
@@ -395,16 +392,6 @@
       </property>
      </widget>
     </item>
-    <item row="9" column="3">
-     <widget class="QPlainTextEdit" name="interfaces">
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>16777215</height>
-       </size>
-      </property>
-     </widget>
-    </item>
     <item row="2" column="1">
      <widget class="QLabel" name="libre_RAM">
       <property name="text">
@@ -498,9 +485,6 @@
       </property>
      </widget>
     </item>
-    <item row="7" column="1">
-     <widget class="QPlainTextEdit" name="discos"/>
-    </item>
     <item row="6" column="0">
      <widget class="QLabel" name="label_9">
       <property name="minimumSize">
@@ -527,37 +511,6 @@
     </item>
     <item row="6" column="1">
      <widget class="QLabel" name="espacio_discos">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="2">
-     <widget class="QLabel" name="label_17">
-      <property name="minimumSize">
-       <size>
-        <width>0</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>16777215</width>
-        <height>30</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>12</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Hora: </string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="3">
-     <widget class="QLabel" name="hora">
       <property name="text">
        <string/>
       </property>
@@ -595,6 +548,22 @@
       </property>
       <property name="margin">
        <number>0</number>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QTextEdit" name="discos"/>
+    </item>
+    <item row="9" column="1">
+     <widget class="QTextEdit" name="particiones"/>
+    </item>
+    <item row="9" column="3">
+     <widget class="QTextEdit" name="interfaces">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
       </property>
      </widget>
     </item>

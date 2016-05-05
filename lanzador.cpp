@@ -35,3 +35,25 @@ lanzador::~lanzador()
 {
     delete ui;
 }
+
+void lanzador::on_pushButton_clicked()
+{
+    QProcess proceso;
+    proceso.startDetached("../../engine/Project1.exe --ext " + ui->textEdit->toPlainText());
+}
+
+void lanzador::on_pushButton_2_clicked()
+{
+    QMessageBox msgBox;
+    QString str_1 = "../../engine/Project1.exe --pid " + ui->textEdit_2->toPlainText();
+    QString str = QString::fromStdString(m.exec(str_1.toLatin1()));
+    msgBox.setText(str);
+    msgBox.exec();
+    qDebug() << str;
+}
+
+void lanzador::on_pushButton_3_clicked()
+{
+    QProcess proceso;
+    proceso.startDetached("../../engine/Project1.exe --kill " + ui->textEdit_3->toPlainText());
+}

@@ -33,7 +33,19 @@ void Monitor::countTime(){
     QString user = QString::fromStdString(exec("../../engine/Project1.exe --current-user"));
     QString date = QString::fromStdString(exec("../../engine/Project1.exe --date-time"));
     QString uptime = QString::fromStdString(exec("../../engine/Project1.exe --uptime"));
-
+    ui->kernel->setText(kernel);
+    ui->procesos->setText(processes);
+    ui->total_RAM->setText(mem);
+    ui->libre_RAM->setText(mem_free);
+    ui->total_SWAP->setText(mem_swap);
+    ui->libre_SWAP->setText(mem_swap_free);
+    ui->discos->setText(disk);
+    ui->particiones->setText(partitions);
+    ui->interfaces->setText(net_ip);
+    ui->espacio_discos->setText(disk_space);
+    ui->fecha->setText(date);
+    ui->tiempo_transcurrido->setText(uptime);
+    ui->usuario->setText(user);
     qDebug() << kernel;
 }
 
