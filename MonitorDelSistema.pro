@@ -27,3 +27,6 @@ FORMS    += mainwindow.ui \
     monitor.ui \
     lanzador.ui \
     acercade.ui
+
+RESOURCES += \
+    imagenes.qrc
